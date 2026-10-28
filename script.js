@@ -124,16 +124,16 @@ document.getElementById("myPara").textContent = name + ", your total is $" + tot
 //         e) Set the output paragraph innerHTML to ""
 document.getElementById('clearBtn').addEventListener('click', () => {
     document.getElementById('myInput').value = "";
-    document.getElementById('r1').checked = false;
-    document.getElementById('r2').checked = false;
-    document.getElementById('r3').checked = true;
-    document.getElementById('r4').checked = false;
+    document.getElementById('r1').checked =false;
+    document.getElementById('r2').checked =false;
+    document.getElementById('r3').checked =true;
+    document.getElementById('r4').checked =false;
 
-    let checkboxes = document.getElementByName('cb');
-    for(let i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].checked = false;
+    let checkedToppings = document.getElementsByName('cb');
+    for(let i = 0; i < checkedToppings.length; i++) {
+        checkedToppings[i].checked = false;
     }
-    document.getByElementId('serviceSelect').value = "dinein";
+    document.getElementById('serviceSelect').value = "dinein";
 
     document.getElementById('myPara').textContent = "";
 })
