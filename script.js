@@ -125,9 +125,9 @@ document.getElementById("myPara").textContent = name + ", your total is $" + tot
 document.getElementById('clearBtn').addEventListener('click', () => {
     document.getElementById('myInput').value = "";
     document.getElementById('r1').checked = false;
-    document.getElementById('r1').checked = false;
-    document.getElementById('r1').checked = true;
-    document.getElementById('r1').checked = false;
+    document.getElementById('r2').checked = false;
+    document.getElementById('r3').checked = true;
+    document.getElementById('r4').checked = false;
 
     let checkboxes = document.getElementByName('cb');
     for(let i = 0; i < checkboxes.length; i++) {
